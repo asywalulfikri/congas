@@ -1,0 +1,125 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:background="@drawable/beach"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_height="match_parent"
+    tools:context="congas.dangdut.bongos.MainActivity">
+
+    <RelativeLayout
+        android:id="@+id/iklan"
+        android:layout_alignParentTop="true"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+
+        <LinearLayout
+            android:id="@+id/banner_container"
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+        </LinearLayout>
+
+    </RelativeLayout>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:orientation="horizontal"
+        android:id="@+id/ll"
+        android:layout_below="@+id/iklan"
+        android:gravity="center"
+        android:layout_height="60dp">
+
+        <ImageView
+            android:id="@+id/cowbell"
+            android:layout_width="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:background="@drawable/cowbell"
+            android:layout_height="wrap_content" />
+
+        <ImageView
+            android:id="@+id/tamborin"
+            android:layout_width="wrap_content"
+            android:background="@drawable/rsz_kecrekan"
+            android:layout_height="wrap_content" />
+        <ImageView
+            android:id="@+id/crash"
+            android:layout_marginRight="10dp"
+            android:layout_width="wrap_content"
+            android:background="@drawable/cas"
+            android:layout_height="wrap_content" />
+
+    </LinearLayout>
+
+
+
+    <ImageView
+        android:id="@+id/symbal_left"
+        android:layout_width="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:background="@drawable/tenor"
+        android:layout_alignParentLeft="true"
+        android:layout_height="wrap_content" />
+
+    <ImageView
+        android:id="@+id/symbal_right"
+        android:layout_width="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:background="@drawable/tenor"
+        android:layout_alignParentRight="true"
+        android:layout_height="wrap_content" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:orientation="horizontal"
+        android:layout_below="@id/ll"
+        android:gravity="center"
+        android:layout_height="wrap_content">
+
+
+        <ImageView
+            android:id="@+id/conga_tengah"
+            android:layout_width="wrap_content"
+            android:background="@drawable/conga"
+            android:layout_height="wrap_content" />
+        <ImageView
+            android:id="@+id/conga_kanan"
+            android:layout_width="wrap_content"
+            android:background="@drawable/conga"
+            android:layout_height="wrap_content" />
+    </LinearLayout>
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:gravity="center"
+        android:layout_alignParentBottom="true"
+        android:orientation="horizontal"
+        android:layout_height="wrap_content">
+
+        <ImageView
+            android:id="@+id/conga_left"
+            android:layout_width="wrap_content"
+            android:layout_toLeftOf="@+id/conga_center"
+            android:background="@drawable/conga_"
+            android:layout_height="wrap_content" />
+        <ImageView
+            android:id="@+id/conga_center"
+            android:layout_width="wrap_content"
+            android:background="@drawable/conga_"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true" />
+
+        <ImageView
+            android:id="@+id/conga_right"
+            android:layout_toRightOf="@+id/conga_center"
+            android:layout_width="wrap_content"
+            android:background="@drawable/conga_"
+            android:layout_height="wrap_content" />
+    </RelativeLayout>
+
+
+
+</RelativeLayout>
